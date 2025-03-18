@@ -139,7 +139,7 @@ describe('terminal module', function()
       local git_root_cmd_found = false
 
       for _, cmd in ipairs(vim_cmd_calls) do
-        if cmd:match('terminal claude config set cwd /test/git/root') then
+        if cmd:match('terminal claude %-%-cwd /test/git/root') then
           git_root_cmd_found = true
           break
         end

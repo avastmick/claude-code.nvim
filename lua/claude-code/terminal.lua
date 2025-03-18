@@ -66,7 +66,7 @@ function M.toggle(claude_code, config, git)
     if config.git and config.git.use_git_root then
       local git_root = git.get_git_root()
       if git_root then
-        cmd = 'terminal ' .. config.command .. ' config set cwd ' .. git_root
+        cmd = 'terminal ' .. config.command .. ' --cwd ' .. git_root
       end
     end
 
