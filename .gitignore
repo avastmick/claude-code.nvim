@@ -43,3 +43,6 @@ luac.out
 .DS_Store
 **/doc/tags
 **/doc/tags-*
+
+# Secrets
+.env*
